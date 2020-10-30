@@ -177,7 +177,7 @@ class RndStatus(commands.Cog):
             clean_prefix = pattern.sub(f"@{me.name}", prefix[0])
             total_users = len(self.bot.users)
             servers = str(len(self.bot.guilds))
-            botstatus = f"{clean_prefix}help | {total_users} users | {servers} servers"
+            botstatus = {total_users} Membros"
             if (current_game != str(botstatus)) or current_game is None:
                 if _type == 1:
                     await self.bot.change_presence(activity=discord.Streaming(name=botstatus, url=url))
